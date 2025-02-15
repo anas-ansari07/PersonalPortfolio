@@ -32,6 +32,8 @@
               }
             ],
             "styles": [
+              "node_modules/devicon/devicon.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -98,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "71691083-bc67-41a7-b15d-fadf81c0217d"
   }
 }

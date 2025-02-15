@@ -1,0 +1,394 @@
+
+.about-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #1a1a2e;
+    color: white;
+
+    .section-title {
+        font-size: 2.5rem;
+        color: #00adb5;
+        margin-bottom: 2rem;
+    }
+
+    .experience-timeline {
+        position: relative;
+        max-width: 700px;
+        margin: 0 auto;
+        padding-left: 2rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #00adb5;
+        }
+
+        .experience-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-left: 40px; // Space from timeline
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .experience-dot {
+                position: absolute;
+                left: 10px;
+                width: 14px;
+                height: 14px;
+                background: #00adb5;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            .experience-duration {
+                background: #00adb5;
+                color: white;
+                padding: 6px 12px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: bold;
+                white-space: nowrap;
+                min-width: 145px;
+                text-align: center;
+            }
+
+            .experience-details {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 15px;
+                border-radius: 10px;
+                text-align: left;
+                flex-grow: 1;
+
+                h3 {
+                    font-size: 1.4rem;
+                    color: #00adb5;
+                    margin-bottom: 5px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+
+                    li {
+                        font-size: 1.1rem;
+                        color: #ddd;
+                        margin-bottom: 8px;
+                        position: relative;
+                        padding-left: 20px;
+
+                        &::before {
+                            content: "•";
+                            position: absolute;
+                            left: 0;
+                            color: #00adb5;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .experience-timeline {
+        padding-left: 0;
+
+        &::before {
+            left: 8px;
+        }
+
+        .experience-card {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 30px;
+
+            .experience-dot {
+                left: 4px;
+            }
+
+            .experience-duration {
+                position: relative;
+                left: 0;
+                margin-bottom: 8px;
+                text-align: left;
+            }
+
+            .experience-details {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.education-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #1a1a2e;
+    color: white;
+
+    .section-title {
+        font-size: 2.5rem;
+        color: #00adb5;
+        margin-bottom: 2rem;
+    }
+
+    .education-timeline {
+        position: relative;
+        max-width: 700px;
+        margin: 0 auto;
+        padding-left: 2rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #00adb5;
+        }
+
+        .education-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-left: 40px; // Adjust space from timeline
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .education-dot {
+                position: absolute;
+                left: 10px;
+                width: 14px;
+                height: 14px;
+                background: #00adb5;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            .education-duration {
+                background: #00adb5;
+                color: white;
+                padding: 6px 12px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: bold;
+                white-space: nowrap;
+                min-width: 140px;
+                text-align: center;
+            }
+
+            .education-details {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 15px;
+                border-radius: 10px;
+                text-align: left;
+                flex-grow: 1;
+
+                h3 {
+                    font-size: 1.4rem;
+                    color: #00adb5;
+                    margin-bottom: 5px;
+                }
+
+                .course {
+                    font-size: 1.1rem;
+                    color: #ddd;
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .education-timeline {
+        padding-left: 0;
+
+        &::before {
+            left: 8px;
+        }
+
+        .education-card {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 30px;
+
+            .education-dot {
+                left: 4px;
+            }
+
+            .education-duration {
+                position: relative;
+                left: 0;
+                margin-bottom: 8px;
+                text-align: left;
+            }
+
+            .education-details {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.projects-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #243b55;
+    color: white;
+
+    .section-title {
+        font-size: 2.5rem;
+        color: #00adb5;
+        margin-bottom: 2rem;
+    }
+
+    .projects-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap; // Ensures responsiveness
+    }
+
+    .project-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 12px;
+        max-width: 500px;
+        min-width: 350px;
+        flex: 1;
+        box-shadow: 0px 4px 10px rgba(0, 173, 181, 0.2);
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 173, 181, 0.3);
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            color: #00adb5;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                font-size: 1.1rem;
+                color: #ddd;
+                margin-bottom: 8px;
+                position: relative;
+                padding-left: 20px;
+
+                &::before {
+                    content: "✔";
+                    position: absolute;
+                    left: 0;
+                    color: #00adb5;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column; // Stacks the cards on smaller screens
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+}
+
+.skills-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #1e2a38;
+    color: white;
+
+    .section-title {
+        font-size: 2.5rem;
+        color: #00adb5;
+        margin-bottom: 2rem;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .skills-category {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 173, 181, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 173, 181, 0.3);
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            color: #00adb5;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                font-size: 1.1rem;
+                color: #ddd;
+                margin-bottom: 8px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr; // Stacks items on smaller screens
+    }
+}

@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #007bff;
+$secondary-color: #333;
+$bg-color: #f8f9fa;
+$text-color: #222;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: $bg-color;
+    color: $text-color;
+    line-height: 1.6;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
